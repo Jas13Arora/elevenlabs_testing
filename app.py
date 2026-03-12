@@ -2,7 +2,7 @@ import streamlit as st
 from elevenlabs.client import ElevenLabs
 import tempfile
 
-client = ElevenLabs(api_key="YOUR_ELEVENLABS_API_KEY")
+client = ElevenLabs(api_key=st.secrets["ELEVENLABS_API_KEY"])
 
 st.title("Voice AI Widget")
 
