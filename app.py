@@ -2,7 +2,7 @@ import streamlit as st
 from elevenlabs.client import ElevenLabs
 import tempfile
 
-client = ElevenLabs(api_key=st.secrets["ELEVENLABS_API_KEY"])
+client = ElevenLabs(api_key=st.secrets["sk_b6fc84c17166534480ecebc23ea4ab84fe63ddb2be2d27f8"])
 
 st.title("Voice AI Widget")
 
@@ -22,3 +22,4 @@ if audio_data is not None:
             f.write(chunk)
 
     st.audio(output_file.name)
+
